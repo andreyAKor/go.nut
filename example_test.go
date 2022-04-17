@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	nut "github.com/andreyAKor/go.nut"
+	nut "github.com/andreyAKor/nut_client"
 )
 
 // This example connects to NUT, authenticates and returns the first UPS listed.
