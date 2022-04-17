@@ -33,13 +33,10 @@ func NewClient(ctx context.Context, hostname string, port int) (*Client, error) 
 		conn: conn,
 	}
 
-	client.Version, err = client.GetVersion()
-	if err != nil {
+	if client.Version, err = client.GetVersion(); err != nil {
 		return nil, fmt.Errorf("%w: get version fail", err)
 	}
-
-	client.ProtocolVersion, err = client.GetNetworkProtocolVersion()
-	if err != nil {
+	if client.ProtocolVersion, err = client.GetNetworkProtocolVersion(); err != nil {
 		return nil, fmt.Errorf("%w: get network protocol version fail", err)
 	}
 
