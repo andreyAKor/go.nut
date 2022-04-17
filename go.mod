@@ -1,3 +1,3 @@
-module github.com/andreyAKor/go.nut
+module github.com/andreyAKor/nut_client
 
 go 1.17
