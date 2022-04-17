@@ -1,7 +1,7 @@
 // Package nut provides a Golang interface for interacting with Network UPS Tools (NUT).
 //
 // It communicates with NUT over the TCP protocol
-package nut
+package nut_client
 
 import (
 	"bufio"

@@ -1,4 +1,4 @@
-package nut
+package nut_client
 
 import "errors"
 
